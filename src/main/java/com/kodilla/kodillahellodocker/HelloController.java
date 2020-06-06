@@ -12,4 +12,9 @@ public class HelloController {
         return name.map(n -> "Hello " + n + "!").orElse("Hello, World!");
     }
 
+    @GetMapping("/health")
+    public String health() {
+        return "OK";
+    }
+
 }
